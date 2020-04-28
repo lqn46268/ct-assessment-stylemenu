@@ -3,6 +3,10 @@
     Add a CSS ruleset to accomplish the following:
     - Use the 'Oswald' font family at 14px throughout the body of the document.
 */
+body {
+    font-family: Oswald;
+    font-size: 14px;
+}
 
 nav {
     font-family: sans-serif;
@@ -20,7 +24,11 @@ nav {
         - set the font size to 46px 
         - use a lighter weight font
 */
-
+h1 {
+    font-family: 'bungee inline';
+    font-size: 46px;
+    font-weight: lighter;
+}
 #menu {
     columns: 420px 2;
     column-gap: 60px;
@@ -33,6 +41,7 @@ section {
 
 h2 {
     margin-top: 0;
+    text-transform: uppercase;
 }
 
 /* 
@@ -48,8 +57,14 @@ h2 {
 
 dt {
     display: inline;
+    font-weight: bold;
+    font-size: 16px;
+
 }
 
+dt::after {
+    content: ",";
+}
 /* 
     Add a CSS ruleset to accomplish the following:
     - Make a comma appear after the name of each menu item
@@ -70,6 +85,14 @@ dd::after {
 .price {
     float: right;
     padding: 0 0 35px 20px;
+}
+
+footer {
+    text-align: right;
+}
+
+#starters, #desserts {
+    border: 2px solid black;
 }
 
 /* 
